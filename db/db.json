@@ -1,0 +1,171 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "img": "bby-yoda",
+      "nombre": "bebe yoda",
+      "precio": 2000,
+      "categoria": "starWars"
+    },
+    {
+      "id": 2,
+      "img": "figura-dark",
+      "nombre": "Darck Veider",
+      "precio": 2000,
+      "categoria": "starWars"
+    },
+    {
+      "id": 4,
+      "img": "star-wars",
+      "nombre": "Taza Star trupper",
+      "precio": 2000,
+      "categoria": "starWars"
+    },
+    {
+      "id": 5,
+      "img": "star-wars2",
+      "nombre": "Cabesas de Darck veider",
+      "precio": 2000,
+      "categoria": "starWars"
+    },
+    {
+      "id": 6,
+      "img": "yoda",
+      "nombre": "Yoda Adulto",
+      "precio": 50,
+      "categoria": "starWars"
+    },
+    {
+      "id": 7,
+      "img": "control-xyz",
+      "nombre": "Consola Wi",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 8,
+      "img": "mando-wi",
+      "nombre": "Mando para WI",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 9,
+      "img": "nintendio",
+      "nombre": "Consola Nintendo",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 10,
+      "img": "play-5",
+      "nombre": "Play Station 5",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 11,
+      "img": "videojuego-antiguo",
+      "nombre": "Jugui bugui",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 12,
+      "img": "xvox",
+      "nombre": "Xbox X",
+      "precio": 2000,
+      "categoria": "consolas"
+    },
+    {
+      "id": 13,
+      "img": "despertador",
+      "nombre": "Despertador rosa",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": 14,
+      "img": "mando.xbox",
+      "nombre": "Mando de Xbox",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": 15,
+      "img": "pikachu",
+      "nombre": "Botarga Pikachu",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": 16,
+      "img": "sonic",
+      "nombre": "figura Sonic",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": 17,
+      "img": "vr",
+      "nombre": "Lentes de Vr",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": 18,
+      "img": "logo-japones",
+      "nombre": "Playera de Japón",
+      "precio": 2000,
+      "categoria": "variados"
+    },
+    {
+      "id": "2e93206e-fe3d-47f2-b4fc-f6753ab492df",
+      "img": "bby-yoda",
+      "nombre": "Baby Yoda",
+      "precio": "1200",
+      "categoria": "starWars"
+    },
+    {
+      "id": "3a2a7b26-0ba9-4c4b-b2dd-cc8c7c3bf1e3",
+      "img": "https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+      "nombre": "gato 2",
+      "precio": "1000",
+      "categoria": "variados"
+    },
+    {
+      "id": "ebf50be8-7c0d-47e3-9ac5-67e7f0dbfd08",
+      "img": "https://images.unsplash.com/photo-1664925192097-54e1a3c48778?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+      "nombre": "Estuido",
+      "precio": "1400",
+      "categoria": "variados"
+    },
+    {
+      "id": "5662909c-cfec-455b-86a3-f82b18447a4a",
+      "img": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1619&q=80",
+      "nombre": "Xbox con control",
+      "precio": "12000",
+      "categoria": "consolas"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Danny yael",
+      "email": "yael.alura@alura.com",
+      "password": 232323
+    },
+    {
+      "id": 2,
+      "nombre": "Pedro Rivera",
+      "email": "PedroRiv.alura@alura.com",
+      "password": 232323
+    },
+    {
+      "id": 3,
+      "nombre": "Gorge lopez",
+      "email": "lopez.alura@alura.com",
+      "password": 232323
+    }
+  ]
+}
