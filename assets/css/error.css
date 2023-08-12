@@ -4,43 +4,16 @@
     font-family: var(--fuenteSecundaria);
     text-align: center;
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
 }
-.error::after{
+
+.error::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -9px;
-    width: 53rem;
+    width: 61rem;
     height: 100%;
     border-bottom: 2px solid red;
     transition: all .3s ease;
 }
-/* .campo__lbl::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid var(--colorSecundario);
-    transform: translateX(-100%);
-    transition: all .3s ease;
-}
-.campo__input:focus + .campo__lbl::after,
-.campo__input:valid + .campo__lbl::after {
-    transform: translateX(0%);
-}
-.label__nombre {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    transition: all .3s ease;
-    color: var(--negro);
-}
-.campo__input:focus + .campo__lbl .label__nombre,
-.campo__input:valid + .campo__lbl .label__nombre {
-    transform: translateY(-140%);
-    font-size: 1.4rem;
-    color: var(--colorSecundario);
-} */

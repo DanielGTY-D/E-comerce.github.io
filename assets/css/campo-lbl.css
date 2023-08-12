@@ -7,6 +7,7 @@
     pointer-events: none;
     border-bottom: 2px solid var(--negro);
 }
+
 .campo__lbl::after {
     content: '';
     position: absolute;
@@ -18,10 +19,12 @@
     transform: translateX(-100%);
     transition: all .3s ease;
 }
-.campo__input:focus + .campo__lbl::after,
-.campo__input:valid + .campo__lbl::after {
+
+.campo__input:focus+.campo__lbl::after,
+.campo__input:valid+.campo__lbl::after {
     transform: translateX(0%);
 }
+
 .campo__txtnombre {
     height: 100%;
     width: 100%;
@@ -32,6 +35,7 @@
     border-bottom: 2px solid var(--negro);
     outline: none;
 }
+
 .campo__txtnombre::after {
     content: '';
     position: absolute;
@@ -43,7 +47,8 @@
     transform: translateX(-100%);
     transition: all .3s ease;
 }
-.campo__textarea:focus + .campo__txtnombre::after,
-.campo__textarea:valid + .campo__txtnombre::after{
+
+.campo__textarea:focus+.campo__txtnombre::after,
+.campo__textarea:valid+.campo__txtnombre::after {
     transform: translateX(0%);
 }

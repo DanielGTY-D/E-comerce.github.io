@@ -7,8 +7,3 @@
     resize: none;
     outline: none;
 }
-
-
-/* .campo__textarea:focus + .campo__textarea::after {
-    transform: translateX(0%);
-} */

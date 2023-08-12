@@ -1,7 +1,7 @@
 import { services } from "../services/service.cliente.js";
 document.addEventListener("DOMContentLoaded", () => {
   const productoLista = document.querySelectorAll(".lista__productos");
-  const crearProducto = (img, nombre, precio, referencia) => {
+  const crearProducto = (img, nombre, precio, referencia, id) => {
     const producto = document.createElement("li");
 
     const imgProducto = document.createElement("img");
@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     crearImgProducto(img, referencia, imgProducto);
 
     const contenido = document.createElement("div");
-    contenido.classList.add("contenido", "bg-color");
+    contenido.classList.add("contenido__prod", "bg-color");
     contenido.innerHTML = `
     <h4 class="contenido__titulo">${nombre}</h4>
     <p class="contenido__precio">$${precio}</p>
-    <a href="" class="btn">Ver producto</a>
+    <a href="../screens/producto.html?id=${id}" class="btn" id=${id}>Ver producto</a>
     `;
 
     producto.appendChild(imgProducto);
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   services.peticionProductos().then((datos) => {
     datos.forEach((producto) => {
-      const { nombre, precio, img, categoria } = producto;
-      crearProducto(img, nombre, precio, categoria);
+      const { nombre, precio, img, categoria, id } = producto;
+      crearProducto(img, nombre, precio, categoria, id);
     });
   });
 });

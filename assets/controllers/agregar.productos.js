@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputPrecio = form.querySelector("[data-tipo=precio]").value;
     const inputImg = form.querySelector("[data-tipo=url]").value;
     const inputNombre = form.querySelector("[data-tipo=nombre]").value;
+    const inputDesc = form.querySelector("[data-tipo=descripcion]").value;
+    const regexUrl = /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
 
     if (!categorias[inputCategoria]) {
       const { starWars, consolas, variados } = categorias;
@@ -28,14 +30,28 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       return;
     }
+    if (inputDesc.length < 250) {
+      mostrarMensaje("La descripcion es muy corta", form);
+    }
+    if (!regexUrl.test(inputImg)) {
+      mostrarMensaje("No es un url valido", form);
+    }
     if (inputPrecio.value >= 100000) {
       mostrarMensaje("El precio es demasiado elevado", form);
       return;
     }
 
     services
-      .agregarProducto(inputImg, inputNombre, inputPrecio, inputCategoria)
-      .then((respuesta) => console.log(respuesta))
+      .agregarProducto(
+        inputImg,
+        inputNombre,
+        inputPrecio,
+        inputCategoria,
+        inputDesc
+      )
+      .then(() => {
+        window.location.href = "/index.html";
+      })
       .catch((err) => console.log(err));
   }
 

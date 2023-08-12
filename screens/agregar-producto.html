@@ -64,6 +64,10 @@
     <link rel="stylesheet" href="/assets/css/redes/redes-lista.css">
     <!-- eliminar -->
     <link rel="stylesheet" href="/assets/css/error2.css">
+    <!-- descripcion -->
+    <link rel="stylesheet" href="/assets/css/descripcion/descripcion.css">
+    <link rel="stylesheet" href="/assets/css/descripcion/descripcion-lbl.css">
+    <link rel="stylesheet" href="/assets/css/descripcion/descripcion-texto.css">
 </head>
 
 <body>
@@ -86,7 +90,7 @@
         <section class="container">
             <form class="login bg-color" data-form="producto">
                 <fieldset>
-                    <h2 class="login__titulo">Iniciar Sesión</h2>
+                    <h2 class="login__titulo">Agregar Producto</h2>
 
                     <div class="campos">
                         <div>
@@ -111,6 +115,12 @@
                                 data-tipo="precio">
                             <label for="precio" class="campo__lbl"><span class="label__nombre">Precio del
                                     producto</span></label>
+                        </div>
+                        <div class="descripcion-1">
+                            <textarea name="descripcion" id="descripcion" class="descripcion" required
+                                data-tipo="descripcion"></textarea>
+                            <label for="descripcion" class="descripcion__lbl"><span
+                                    class="descripcion__texto">Descripción del producto</span></label>
                         </div>
                     </div>
                 </fieldset>
